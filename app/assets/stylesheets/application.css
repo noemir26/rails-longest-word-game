@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+  .container {
+    margin: 0 auto;
+  }
+
+ .letter {
+  color: aliceblue;
+  background-color: rgb(0, 157, 255);
+  border: 3px;
+  border-color: rgb(26, 39, 71);
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(26, 39, 71, .5);
+ }

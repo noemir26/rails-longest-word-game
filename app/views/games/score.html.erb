@@ -1,0 +1,9 @@
+<% if !@word_in_letters %>
+  <%= "Sorry, #{@attempt.upcase} has letters not included in #{@letters.upcase}" %>
+<% elsif @english_word %>
+  <%= "Congratulations! #{@attempt.upcase} is a valid English word!" %>
+ <% else %>
+  <%= "Sorry, #{@attempt.upcase} is not an English word..." %>
+<% end %>
+
+<button class="btn btn-outline-info w-25 my-2 color-white"><%= link_to "Play again!", new_path, class: "text-decoration-none" %></button>
